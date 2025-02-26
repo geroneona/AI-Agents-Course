@@ -2,6 +2,8 @@
 def get_weather(city : str):
     if city == "California":
         return "sunny"
+    if city == "Arizona":
+        return "snowy"
     if city == "Paris":
         return "rainy"
     if city == "London":

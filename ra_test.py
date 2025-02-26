@@ -1,6 +1,6 @@
 #Hardcoded Agent
 from openai_module import generate_text_basic
-from prompts import react_system_prompt
+from prompts_20250223 import react_system_prompt
 
 prompt = """
 Should I take an umbrella when going out today in Arizona?"""
