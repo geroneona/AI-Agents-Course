@@ -6,6 +6,7 @@ At the end of the loop you output an Answer.
 
 Use Thought to understand the question you have been asked.
 Use Action to run one of the actions available to you - then return PAUSE.
+If the expected answer is static, return no action needed.
 Action_Response will be the result of running those actions.
 
 Your available actions are:

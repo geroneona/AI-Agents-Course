@@ -32,13 +32,24 @@ def generate_text_basic(prompt: str, model = "gpt-3.5-turbo", system_prompt: str
 
     return text_response
 
-
-
+# Define a function that generates text using the OpenAI API with a conversation
 def generate_text_with_conversation(messages,model = "gpt-3.5-turbo"):
     response = openai_client.chat.completions.create(
         model=model,
         messages=messages
         )
-    return response.choices[0].message.content
+
+    # Extract the text from the response
+    text_response = response.choices[0].message.content
+
+    # Check if the response contains a JSON function
+    if extract_json(text_response):
+        print(f"Response inside openai_module.py:\n\n{response}")
+        print()
+        input("Press Enter to continue...")
+    else:
+        pass
+
+    return text_response
 
 
