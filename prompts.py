@@ -41,14 +41,14 @@ Answer: No, I should not take an umbrella today because the weather is sunny.
 
 Another example session:
 
-Question: Who is Gerone Ona's boss in IBM AEP Project?
+Question: Who is Gerone Ona's (me) boss in IBM AEP Project?
 Thought: I should check the IBM AEP's list of boss's name first.
 Action: 
 
 {
   "function_name": "get_ibm_aep_boss_name",
   "function_parms": {
-    "employee_name": "Gerone Ona"
+    "employee_name": "Gerone Ona" or "Gerone" or "Me"
   }
 }
 
