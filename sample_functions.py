@@ -15,17 +15,17 @@ def get_weather(city : str):
     
 # function to return employee's boss name
 def get_ibm_aep_boss_name(employee_name: str):
-    if employee_name == "Gerone Ona":
+    if employee_name == "Gerone Ona" or employee_name == "Gerone":
         return "Chad Flores"
-    if employee_name == "Don De Gala":
+    if employee_name == "Don De Gala" or employee_name == "Don":
         return "Gene Evasco"
-    if employee_name == "Hurry Calingacion":
+    if employee_name == "Hurry Calingacion" or employee_name == "Hurry":
         return "Chad Flores"
-    if employee_name == "Ely Limbo":
+    if employee_name == "Ely Limbo" or employee_name == "Ely":
         return "Alwil Geresola"
-    if employee_name == "Wilson Serquina":
+    if employee_name == "Wilson Serquina" or employee_name == "Wilson":
         return "Hurry Calingacion"
-    if employee_name == "Aldrin Gutierrez":
+    if employee_name == "Aldrin Gutierrez" or employee_name == "Aldrin":
         return "Chad Flores"
-    if employee_name == "Chad Flores":
+    if employee_name == "Chad Flores" or employee_name == "Chad":
         return "Dinday Cabangon"
