@@ -43,12 +43,14 @@ def generate_text_with_conversation(messages,model = "gpt-3.5-turbo"):
     text_response = response.choices[0].message.content
 
     # Check if the response contains a JSON function
+    """
     if extract_json(text_response):
         print(f"Response inside openai_module.py:\n\n{response}")
         print()
         input("Press Enter to continue...")
     else:
         pass
+    """
 
     return text_response
 

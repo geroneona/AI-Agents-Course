@@ -39,4 +39,30 @@ You then output:
 
 Answer: No, I should not take an umbrella today because the weather is sunny.
 
+Another example session:
+
+Question: Who is Gerone Ona's boss in IBM AEP Project?
+Thought: I should check the IBM AEP's list of boss's name first.
+Action: 
+
+{
+  "function_name": "get_ibm_aep_boss_name",
+  "function_parms": {
+    "employee_name": "Gerone Ona"
+  }
+}
+
+PAUSE
+
+You will be called again with this:
+
+Action_Response: Gerone Ona's boss in IBM AEP Project is Chad Flores
+
+You then output:
+
+Answer: Gerone Ona's boss in IBM AEP Project is Chad Flores.
+
+IMPORTANT:
+These two example sessions (related to weather and IBM AEP employee's boss name) are the only actions you can perform. The rest is up to you.
+
 """.strip()
