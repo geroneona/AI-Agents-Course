@@ -1,3 +1,4 @@
+import subprocess
 
 def get_weather(city : str):
     if city == "California":
@@ -29,3 +30,8 @@ def get_ibm_aep_boss_name(employee_name: str):
         return "Chad Flores"
     if employee_name == "Chad Flores" or employee_name == "Chad":
         return "Dinday Cabangon"
+    
+# function to engage ICA
+def engage_ica():
+    subprocess.run(["python", "ICA_Engager.py"])
+    return "ICA Engaged"
