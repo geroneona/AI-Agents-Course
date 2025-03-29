@@ -33,5 +33,13 @@ def get_ibm_aep_boss_name(employee_name: str):
     
 # function to engage ICA
 def engage_ica():
-    subprocess.run(["python", "ICA_Engager.py"])
+    subprocess.run(["python", "ICA_Engager_2FAuth.py"])
     return "ICA Engaged"
+
+# function to log ILC weekly time in based from previous week
+def log_ilc_weekly_time():
+    result = subprocess.run(["python", "ILC_Weekly_Time_In.py"])
+    if result.returncode == 0:
+        return "ILC Weekly Time In Successfully Logged"
+    else:
+        return "ILC Weekly Time In Failed to Log"
